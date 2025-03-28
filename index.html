@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>CalmNest</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    </head>
+
+    <body>
+    <div id="ready">
+      <i class="fa fa-spinner fa-5x fa-spin"></i>
+    </div>
+
+    <a
+      id="topBtn"
+      class="position-fixed bottom-0 end-0 translate-middle text-white"
+    >
+      <i class="bi bi-chevron-up fs-3 p-2 main-bg rounded-circle"></i>
+    </a>
+
+    <nav class="navbar navbar-expand-lg bg-nav fixed-top py-2">
+      <div class="container">
+        <a class="navbar-brand">
+          <h2 class="text-light">CalmNest</h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        ></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 ms-0 ms-lg-5 py-3 py-lg-0 fw-bold"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#workout-plans">Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nutrition-tips">Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#screenshots">Screenshots</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#get">Our app</a>
+            </li>
+          </ul>
+          <div
+            class="custome d-flex justify-content-center align-items-center pb-4 pb-lg-0"
+          >
+            <div class="language py-2">
+              <i class="bi bi-globe fs-6"></i>
+              <select class="py-1" name="language">
+                <option selected value="English">English</option>
+                <option value="Arabic">Arabic</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="home position-relative">
+      <div class="vectors">
+        <img
+          src="imgs/Vector 1.png"
+          class="position-absolute w-25 mx-auto vector start-50 translate-middle"
+          alt="vector"
+        />
+      </div>
+      <div
+        class="total-header min-vh-70 d-flex justify-content-center align-items-center"
+      >
+        <div class="container">
+          <div
+            class="row gy-5 d-flex justify-content-center align-items-center"
+          >
+            <div class="col-lg-6">
+              <div class="caption">
+                <h1 class="text-capitalize fw-bold mb-4">
+                  Save Your Time With One Click
+                </h1>
+                <p class="mb-4 py-1">
+                  Your time is so important to that our job is to save your time
+                  and help you get an appointment without waiting.
+                </p>
+                <div class="buttons">
+                  <a href="#get" class="btn rounded-pill main-btn me-3"
+                    ><i class="fa-solid fa-download me-1"></i> Get App</a
+                  >
+                  <a href="#" class="btn rounded-pill second-btn"
+                    ><i class="fa-solid fa-circle-play me-1"></i>Watch Video</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="img-header text-center position-relative">
+                <img src="imgs/Group 24.png" class="w-50 aqua" alt="Group" />
+                <div
+                  class="img-phone position-absolute top-50 start-50 translate-middle"
+                >
+                  <img
+                    src="imgs/main-screen.png"
+                    class="w-100"
+                    alt="main-screen"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Workout Plans -->
+    <section id="workout-plans" class="py-5 bg-light">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+          <h5 class="text-primary mb-2">Workout Plans</h5>
+          <h2 class="fw-bold display-5">Choose Your Plan</h2>
+          <p class="text-muted">
+            Find the perfect workout plan for your fitness level and goals.
+          </p>
+        </div>
+
+        <!-- Plans Row -->
+        <div class="row g-4">
+          <!-- Beginner Plan -->
+          <div class="col-lg-4">
+            <div
+              class="card shadow-sm border-0 h-100 text-center plan-card p-4"
+            >
+              <div class="card-body">
+                <div class="icon mb-4 text-primary">
+                  <i class="bi bi-person-fill display-4"></i>
+                </div>
+                <h4 class="fw-bold mb-3">Beginner Plan</h4>
+                <p class="text-muted">
+                  Start your fitness journey with our beginner-friendly workout
+                  plan designed to build strength and stamina gradually.
+                </p>
+                <a href="#" class="btn btn-outline-primary mt-3">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Intermediate Plan -->
+          <div class="col-lg-4">
+            <div
+              class="card shadow-sm border-0 h-100 text-center plan-card p-4"
+            >
+              <div class="card-body">
+                <div class="icon mb-4 text-success">
+                  <i class="bi bi-lightning-fill display-4"></i>
+                </div>
+                <h4 class="fw-bold mb-3">Intermediate Plan</h4>
+                <p class="text-muted">
+                  Take your fitness to the next level with structured workouts
+                  focused on building muscle and improving endurance.
+                </p>
+                <a href="#" class="btn btn-outline-success mt-3">Join Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Advanced Plan -->
+          <div class="col-lg-4">
+            <div
+              class="card shadow-sm border-0 h-100 text-center plan-card p-4"
+            >
+              <div class="card-body">
+                <div class="icon mb-4 text-danger">
+                  <i class="bi bi-fire display-4"></i>
+                </div>
+                <h4 class="fw-bold mb-3">Advanced Plan</h4>
+                <p class="text-muted">
+                  Push your limits with high-intensity training programs
+                  designed for experienced fitness enthusiasts and athletes.
+                </p>
+                <a href="#" class="btn btn-outline-danger mt-3"
+                  >Challenge Yourself</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nutrition Tips -->
+    <section id="nutrition-tips" class="nutrition-tips py-5">
+      <div class="container">
+        <div class="main-title text-center py-4">
+          <h5 class="main-color mb-2">Nutrition Tips</h5>
+          <h2 class="fw-bold fs-1">Healthy Eating</h2>
+        </div>
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="tip">
+              <h4>Balanced Diet</h4>
+              <p>
+                Learn how to maintain a balanced diet to support your fitness
+                goals.
+              </p>
+              <img src="imgs/Business ethics-pana.png" class="w-75 mx-auto" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="tip">
+              <h4>Meal Planning</h4>
+              <p>
+                Discover the benefits of meal planning and how to get started.
+              </p>
+              <img src="imgs/Vision board-pana.png" class="w-75 mx-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section -->
+    <section id="features" class="features pt-5">
+      <div class="container">
+        <div class="main-title text-center py-4">
+          <h5 class="main-color mb-2">Why Choose Us?</h5>
+          <h2 class="fw-bold fs-1">Our Features</h2>
+        </div>
+      </div>
+
+      <div class="container-fluid bg-black py-5 text-white">
+        <div class="row gy-5 d-flex justify-content-center align-items-center">
+          <!-- Left Column -->
+          <div class="col-lg-5">
+            <div class="feature special d-flex align-items-center mb-4">
+              <span class="me-3 fs-1 text-success">
+                <i class="bi bi-calendar-check"></i>
+              </span>
+              <p class="mb-0">
+                Easily schedule your workouts and fitness classes anytime,
+                anywhere.
+              </p>
+            </div>
+
+            <div class="feature special d-flex align-items-center mb-4">
+              <span class="me-3 fs-1 text-success">
+                <i class="bi bi-geo-alt"></i>
+              </span>
+              <p class="mb-0">
+                Discover nearby gyms, fitness events, and personal trainers
+                instantly.
+              </p>
+            </div>
+
+            <div class="feature special d-flex align-items-center mb-0">
+              <span class="me-3 fs-1 text-success">
+                <i class="bi bi-bar-chart-line"></i>
+              </span>
+              <p class="mb-0">
+                Track your fitness progress with detailed stats and performance
+                analytics.
+              </p>
+            </div>
+          </div>
+
+          <!-- Center Image (Optional: can remove or replace with an icon) -->
+          <div class="col-lg-2 text-center">
+            <div class="img-feature">
+              <img src="imgs/Rectangle 206-3.png" />
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="col-lg-5">
+            <div class="feature d-flex align-items-center mb-4">
+              <span class="me-3 fs-1 text-success">
+                <i class="bi bi-gift"></i>
+              </span>
+              <p class="mb-0">
+                Earn exclusive rewards and discounts as you achieve your fitness
+                goals.
+              </p>
+            </div>
+
+            <div class="feature d-flex align-items-center mb-4">
+              <span class="me-3 fs-1 text-success">
+                <i class="bi bi-stopwatch"></i>
+              </span>
+              <p class="mb-0">
+                Use real-time workout timers and reminders to stay consistent
+                and motivated.
+              </p>
+            </div>
+
+            <div class="feature d-flex align-items-center mb-0">
+              <span class="me-3 fs-1 text-success">
+                <i class="bi bi-cup-straw"></i>
+              </span>
+              <p class="mb-0">
+                Order nutritious meals and supplements directly through the app.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots py-5">
+      <div class="container">
+        <div class="main-title text-center py-4">
+          <h5 class="main-color mb-2">Discover Inner Peace</h5>
+          <h2 class="fw-bold fs-1">App Experience Preview</h2>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="imgs/Rectangle 206-1.png"
+                alt="Meditation Screen 1"
+                class="screenshot-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/Rectangle 206-2.png"
+                alt="Meditation Screen 2"
+                class="screenshot-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/Rectangle 206-3.png"
+                alt="Meditation Screen 3"
+                class="screenshot-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/Rectangle 206-5.png"
+                alt="Meditation Screen 4"
+                class="screenshot-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/Rectangle 206-4.png"
+                alt="Meditation Screen 5"
+                class="screenshot-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/Rectangle 206.png"
+                alt="Meditation Screen 6"
+                class="screenshot-img"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="imgs/main-screen.png"
+                alt="Meditation Screen 7"
+                class="screenshot-img"
+              />
+            </div>
+          </div>
+
+          <!-- Add Pagination and Navigation -->
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about py-5">
+      <div class="container py-4">
+        <div class="row gy-5 d-flex justify-content-center align-items-center">
+          <div class="col-lg-8">
+            <div class="main-title">
+              <h5 class="main-color mb-2">Do you Know us?</h5>
+              <h2 class="fw-bold fs-1 mb-4">About CalmNest</h2>
+              <p class="fs-5 mb-0">
+                CalmNest let you make a reservation at any Doctors, Salons,
+                Banks....etc CalmNest is used when you don’t like to wait in
+                Banks or outside using two apps one for Client and the other for
+                the banks.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="img-about">
+              <img
+                src="imgs/Flight Booking-pana.png"
+                alt="Booking illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Get Our App Section -->
+    <section id="get" class="get pt-5">
+      <div class="container">
+        <div class="main-title text-center pb-5">
+          <h5 class="main-color mb-2">Ready to Begin?</h5>
+          <h2 class="fw-bold fs-1 mb-4">Download CalmSpace App</h2>
+          <p class="fs-5 mb-0">
+            Find tranquility anytime, anywhere. Available on App Store & Play
+            Store.
+          </p>
+        </div>
+        <div
+          class="row gy-5 gx-0 d-flex justify-content-center align-items-center"
+        >
+          <div class="col-lg-4">
+            <div class="client text-center d-flex flex-column">
+              <h4 class="mb-4 fw-bold">CalmSpace (For Everyone)</h4>
+              <a
+                href="#"
+                class="btn mx-auto rounded-pill main-btn mb-4 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-apple me-3 fa-2x"></i>
+                <div class="parag text-start">
+                  <p class="mb-0">Available on the</p>
+                  <p class="mb-0 app">App Store</p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="btn mx-auto rounded-pill second-btn mb-4 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-google-play me-3 fa-2x"></i>
+                <div class="parag text-start">
+                  <p class="mb-0">Get it on</p>
+                  <p class="mb-0 app">Google Play</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="screenshot-slider-container">
+              <!-- Swiper -->
+              <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="imgs/Rectangle 206-1.png"
+                      alt="Meditation Screen 1"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="imgs/Rectangle 206-2.png"
+                      alt="Meditation Screen 2"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="imgs/Rectangle 206-3.png"
+                      alt="Meditation Screen 3"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="imgs/Rectangle 206-4.png"
+                      alt="Meditation Screen 4"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="imgs/Rectangle 206-5.png"
+                      alt="Meditation Screen 5"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="imgs/main-screen.png" alt="Meditation Screen 6" />
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="client text-center d-flex flex-column">
+              <h4 class="mb-4 fw-bold">CalmSpace Pro (Advanced Users)</h4>
+              <a
+                href="#"
+                class="btn mx-auto rounded-pill main-btn mb-4 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-apple me-3 fa-2x"></i>
+                <div class="parag text-start">
+                  <p class="mb-0">Available on the</p>
+                  <p class="mb-0 app">App Store</p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="btn mx-auto rounded-pill second-btn mb-4 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-google-play me-3 fa-2x"></i>
+                <div class="parag text-start">
+                  <p class="mb-0">Get it on</p>
+                  <p class="mb-0 app">Google Play</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="footer py-5 mt-5 bg-black position-relative">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4">
+            <div class="logo-footer">
+              <h2 class="text-light">CalmNest</h2>
+              <p>
+                CalmNest is your ultimate fitness companion, helping you achieve
+                your health and wellness goals.
+              </p>
+              <h5 class="mb-4">Follow us</h5>
+              <div class="icons-footer d-flex align-items-center">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/ZARISolutionksa"
+                >
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a target="_blank" href="https://twitter.com/SolutionZari">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/zarisolutionksa/"
+                >
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a target="_blank" href="https://wa.me/+966566770235">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/zari-solution-ksa-12717623b/"
+                >
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="navigate text-center">
+              <h5 class="mb-5">Navigate</h5>
+              <div
+                class="links-navigate d-flex justify-content-center flex-column"
+              >
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#workout-plans">Workout Plans</a>
+                <a href="#nutrition-tips">Nutrition Tips</a>
+                <a href="#screenshots">Screenshots</a>
+                <a href="#about">About Us</a>
+                <a href="#get">Get Our App</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="navigate text-center">
+              <h5 class="mb-4">Contact us</h5>
+              <div class="d-flex justify-content-start align-items-center mb-2">
+                <span class="me-3"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></span>
+                <p class="mb-0 lh-sm">
+                  123 Fitness Street, Health City, Wellness Country
+                </p>
+              </div>
+              <div class="d-flex justify-content-start align-items-center mb-4">
+                <span class="me-3"><i class="fa-solid fa-phone"></i></span>
+                <a target="_blank" href="tel:+1234567890" class="me-2">
+                  +20 1110853514</a
+                >
+              </div>
+              <div class="d-flex justify-content-start align-items-center">
+                <span class="me-4"><i class="fa-solid fa-envelope"></i></span>
+                <a target="_blank" href="mailto:info@newsitename.com">
+                  info@newsitename.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- js files -->
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 30,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+    <script src="js/main.js"></script>
+    </body>
+</html>
